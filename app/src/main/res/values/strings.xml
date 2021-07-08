@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">FoodMsg</string>
+    <string name="button">Button</string>
+    <string name="todo">TODO</string>
+    <string name="skip">SKIP</string>
+    <string name="login">LOGIN</string>
+    <string name="food_train">Food Train</string>
+    <string name="username">USERNAME</string>
+    <string name="password">PASSWORD</string>
+    <string name="phone_no">Phone. no.</string>
+    <string name="register">REGISTER</string>
+    <string name="e_mail">E-mail</string>
+    <string name="name">NAME</string>
+    <string name="snacks">SNACKS</string>
+    <string name="beverages">Beverages</string>
+    <string name="search">SEARCH</string>
+</resources>
