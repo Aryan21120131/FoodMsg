@@ -10,6 +10,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -23,6 +25,19 @@ public class MainActivity extends AppCompatActivity {
     DatabaseReference reff;
     String users=null;
     static int maxId=0;
+
+    FirebaseUser user;
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+
+        user= FirebaseAuth.getInstance().getCurrentUser();
+        if(user!=null){
+            startActivity(new Intent(MainActivity.this,home_page.class));
+            finish();
+        }
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
